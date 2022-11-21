@@ -1,0 +1,280 @@
+<div class="flex justify-evenly ">
+<div class=" container mx-auto p-9 mx-10  .grid-cols-1">
+<form class="w-full max-w-lg "  #myform="ngForm">
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+          Name
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Narainder Modi" 
+        [(ngModel)]="form.name"
+        #name="ngModel"
+        name="name"
+        required
+        >
+        <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+          Age
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="20"
+        [(ngModel)]="form.age"
+        #age="ngModel"
+        name="age"
+        required
+        >
+      </div>
+    </div>
+
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3  md:w-1/2 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          Email
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="yours@example.com"
+        [(ngModel)]="form.email"
+        #email="ngModel"
+        name="email"
+        required
+        >
+        <p class="text-gray-600 text-xs italic">enter your email address</p>
+      </div>
+
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+          Phone. no
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="mobile no"
+        [(ngModel)]="form.phoneNo"
+        #phoneNo="ngModel"
+        name="phoneNo"
+        required
+        >
+      </div>
+    </div>
+
+    
+     
+
+    
+
+    
+
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          Address Line 1
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="your address line 1"
+        [(ngModel)]="form.addressLine1"
+        #addL1="ngModel"
+        name="addressLine1"
+        required
+        >
+        <p class="text-gray-600 text-xs italic">enter your email address</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+          Address Line 2
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="your address line 2"
+        [(ngModel)]="form.addressLine2"
+        #addL2="ngModel"
+        name="addressLine2"
+        required
+        >
+        <p class="text-gray-600 text-xs italic">enter your email address</p>
+      </div>
+    </div>
+    
+  
+
+    <div class="flex flex-wrap -mx-3 mb-2">
+      <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+          city
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="shimla"
+        [(ngModel)]="form.city"
+        #city="ngModel"
+        name="city"
+        required
+        >
+      </div>
+
+      <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+          state
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Himachal Pradesh"
+        [(ngModel)]="form.state"
+        #state="ngModel"
+        name="state"
+        required
+        >
+      </div>
+
+      <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+          country
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="India"
+        [(ngModel)]="form.county"
+        #country="ngModel"
+        name="country"
+        required
+        >
+      </div>
+
+      <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+          pincode
+        </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="India"
+        [(ngModel)]="form.pincode"
+        #pincode="ngModel"
+        name="pincode"
+        required
+        >
+      </div>
+    </div>
+
+
+    
+    
+
+    <br>
+    
+    <div class="flex flex-wrap -mx-2 mb-2 ">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+         Trainer Preferences
+        </label>
+        <div class="relative">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"
+          [(ngModel)]="form.trainPref"
+          #trainPref="ngModel"
+          name="trainPref"
+          required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>No pref.</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+        Physiotherapist req.
+        </label>
+        <div class="relative">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"
+          [(ngModel)]="form.physio"
+          #physio="ngModel"
+          name="physio"
+          required
+          >
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+    <br>
+
+    <div class="flex flex-wrap -mx-3 mb-2">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+      Select a Package
+      </label>
+      <div class="relative">
+        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"
+        [(ngModel)]="form.package"
+          #package="ngModel"
+          name="package"
+          required
+        >
+          <option value="500">One time appointment(Rs 500/-)</option>
+          <option value="400">4 sessions per week (Rs 400/- per session)</option>
+          <option value="300">5 sessions per week (Rs 300/- per session)</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+        weeks
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="number" placeholder="Himachal Pradesh"
+      [(ngModel)]="form.weeks"
+          #weeks="ngModel"
+          name="weeks"
+          required
+      >
+    </div>
+  </div>
+
+  <br>
+  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+      Amount 
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" value={{amount}}
+      name="amount"
+      disabled
+    >
+    
+    <div class="flex space-x-2 justify-center" id="grid-city">
+      <button  (click)="calculate()" type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">calculate</button>
+    </div>
+
+
+  </div>
+
+  <br>
+  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><input type="submit"
+      [disabled] = "myform.form.invalid"
+      (click)="addMe($event)"
+      ></button>
+  </div>
+
+  
+
+  
+ 
+
+  
+
+
+
+
+  </form>
+</div>
+
+
+
+
+
+
+<div class="container mx-auto p-9 mx-10  .grid-cols-2">
+  <img class="h-50 w-50" src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+
+</div>
+
+</div>
